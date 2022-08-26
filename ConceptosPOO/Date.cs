@@ -16,7 +16,29 @@ namespace ConceptosPOO
         {
             _year = year;
             _month = CheckMonth(month);
-            _day = day;
+            _day = CheckDay(year, month, day);
+        }
+
+        private int CheckDay(int year, int month, int day)
+        {
+            if(month == 2 && day == 29 && IsLeapYear(year))
+            {
+                return day;
+            }
+
+            int[] daysPerMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+            if (day >= 1 && day <= daysPerMonth[month])
+            {
+                return day;
+            }
+
+            throw new DayException("Día inválido");
+        }
+
+        private bool IsLeapYear(int year)
+        {
+            return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
         }
 
         private int CheckMonth(int month)
@@ -26,7 +48,7 @@ namespace ConceptosPOO
                 return month;
             }
 
-            throw new NotImplementedException();
+            throw new MonthException($"Mes inválido: {month}");
         }
 
         public override string ToString()
