@@ -54,3 +54,12 @@ Producto prod5 = new ProductoCompuesto()
 };
 
 Console.WriteLine(prod5);
+
+
+Factura factura = new Factura();
+factura.AgregarProducto(prod1);
+factura.AgregarProducto(prod3);
+factura.AgregarProducto(prod5);
+
+Console.WriteLine("==================== FACTURA ====================");
+Console.WriteLine(factura);
