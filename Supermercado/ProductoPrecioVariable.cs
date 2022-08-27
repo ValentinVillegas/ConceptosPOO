@@ -24,7 +24,8 @@ namespace Supermercado
                 $"\n\tCantidad...........: {$"{Cantidad:N2}", 18} {UnidadDeMedida}" +
                 $"\n\tImporte............: {$"{Precio * (decimal)Cantidad:C2}", 18}" +
                 $"\n\tIVA................: {$"{Precio * (decimal)IVA * (decimal)Cantidad:C2}",18}" +
-                $"\n\tTotal..............: {$"{GetValueToPay():C2}", 18}";
+                $"\n\tTotal..............: {$"{GetValueToPay():C2}", 18}" +
+                $"\n";
         }
 
 

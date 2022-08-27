@@ -32,3 +32,15 @@ Producto prod3 = new ProductoPrecioVariable()
 };
 
 Console.WriteLine(prod3);
+
+Producto prod4 = new ProductoPrecioVariable()
+{
+    Id = 4040,
+    Descripcion = "Cabano",
+    UnidadDeMedida = "Kg",
+    Precio = 180M,
+    IVA = 0.16F,
+    Cantidad = 0.5F,
+};
+
+Console.WriteLine(prod4);
