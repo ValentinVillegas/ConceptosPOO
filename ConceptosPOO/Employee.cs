@@ -19,7 +19,7 @@
         public override string ToString()
         {
             return $"{Id} - {FirstName} {LastName}, " +
-                $"Birth: {BirthDay}, Hiring: {HiringDate}";
+                $"\n\tBirth: {BirthDay}, Hiring: {HiringDate}";
         }
     }
 }

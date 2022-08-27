@@ -3,7 +3,7 @@
 namespace ConceptosPOO
 {
     [Serializable]
-    internal class MonthException : Exception
+    public class MonthException : Exception
     {
         public MonthException()
         {

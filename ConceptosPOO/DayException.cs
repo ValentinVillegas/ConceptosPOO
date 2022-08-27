@@ -3,7 +3,7 @@
 namespace ConceptosPOO
 {
     [Serializable]
-    internal class DayException : Exception
+    public class DayException : Exception
     {
         public DayException()
         {

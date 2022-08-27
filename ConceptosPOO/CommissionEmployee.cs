@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConceptosPOO
 {
-    public class CommisionEmployee : Employee
+    public class CommissionEmployee : Employee
     {
         public decimal Sales { get; set; }
 
@@ -20,8 +20,9 @@ namespace ConceptosPOO
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\tCommission percentaje: {CommissionPercentaje:P2}" +
-                $"\n\tValue to pay.........: {GetValueToPay():C2}";
+                $"\n\tSales................: {$"{Sales:C2}",18}" +
+                $"\n\tCommission percentaje: {$"{CommissionPercentaje:P2}", 18}" +
+                $"\n\tValue to pay.........: {$"{GetValueToPay():C2}", 18}";
         }
     }
 }

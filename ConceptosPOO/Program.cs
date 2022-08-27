@@ -13,7 +13,9 @@ Employee employee1 = new SalaryEmployee()
 };
 Console.WriteLine(employee1);
 
-Employee employee2 = new CommisionEmployee()
+Console.WriteLine("\n");
+
+Employee employee2 = new CommissionEmployee()
 {
     Id = 2020,
     FirstName = "Patricia",
@@ -25,3 +27,34 @@ Employee employee2 = new CommisionEmployee()
     CommissionPercentaje = 0.03F,
 };
 Console.WriteLine(employee2);
+
+Console.WriteLine("\n");
+
+Employee employee3 = new HourlyEmployee() {
+    Id = 3030,
+    FirstName = "Gonzalo",
+    LastName = "Cardona",
+    BirthDay = new Date(1985,5,23),
+    HiringDate = new Date(2022,2,5),
+    IsActive = true,
+    Hours = 18,
+    HourValue = 680,
+
+};
+Console.WriteLine(employee3);
+
+Console.WriteLine("\n");
+
+Employee employee4 = new BaseCommissionEmployee() {
+    Id = 4040,
+    FirstName = "Jazmin",
+    LastName = "Salazar",
+    BirthDay = new Date(1997, 9, 20),
+    HiringDate = new Date(2022, 4, 18),
+    IsActive = true,
+    CommissionPercentaje = 0.015F,
+    Sales = 580000,
+    Base = 4500,
+};
+
+Console.WriteLine(employee4);
