@@ -6,7 +6,29 @@ Producto prod1 = new ProductoPrecioFijo()
     Id = 1010,
     Descripcion = "Vino Gato Negro",
     Precio = 460M,
-    IVA = 0.08F,
+    IVA = 0.16F,
 };
 
 Console.WriteLine(prod1);
+
+Producto prod2 = new ProductoPrecioFijo()
+{
+    Id = 2020,
+    Descripcion = "Pan Bimbo Artesanal",
+    Precio = 48.5M,
+    IVA = 0.16F,
+};
+
+Console.WriteLine(prod2);
+
+Producto prod3 = new ProductoPrecioVariable()
+{
+    Id = 3030,
+    Descripcion = "Queso Holandes",
+    UnidadDeMedida = "Kg",
+    Precio = 87M,
+    IVA = 0.16F,
+    Cantidad = 1.8F,
+};
+
+Console.WriteLine(prod3);
