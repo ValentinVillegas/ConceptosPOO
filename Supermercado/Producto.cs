@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Supermercado
 {
-    internal class Producto
+    public abstract class Producto
     {
+        public int Id { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public decimal Precio { get; set; }
+
+        public decimal IVA { get; set; }
+
+        public abstract decimal GetValueToPay();
+
+        public override string ToString()
+        {
+            return $"Id............: {$"{Id}", 15}" +
+                $"\n\tDescripción..: {Descripcion}" +
+                $"\n\tPrecio:......: {$"{Precio:C2}"}" +
+                $"\n\tIVA..........: {$"{IVA:C2}", 15}";
+        }
     }
 }
