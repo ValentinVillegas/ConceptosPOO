@@ -16,7 +16,7 @@
             return $"{base.ToString()}" +
                 $"\n\tHours................: {$"{Hours:N2}",18}" +
                 $"\n\tHour value...........: {$"{HourValue:N2}",18}" +
-                $"\n\tValue to pay.........: {$"{GetValueToPay():C2}",18}";
+                $"\n\tValue to pay.........: {$"{GetValueToPay():C2}",18} \n";
         }
     }
 }
