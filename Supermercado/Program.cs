@@ -47,7 +47,7 @@ Console.WriteLine(prod4);
 
 Producto prod5 = new ProductoCompuesto()
 {
-    Id = 4040,
+    Id = 5050,
     Descripcion = "Paquete #1",
     Descuento = 0.15F,
     Productos = new List<Producto>() { prod1, prod2, prod3, prod4},

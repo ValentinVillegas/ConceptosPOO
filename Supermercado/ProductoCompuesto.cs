@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Supermercado
+﻿namespace Supermercado
 {
-    public class ProductoCompuesto:Producto
+    public class ProductoCompuesto : Producto
     {
         public float Descuento { get; set; }
 

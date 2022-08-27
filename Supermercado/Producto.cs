@@ -1,6 +1,6 @@
 ﻿namespace Supermercado
 {
-    public abstract class Producto
+    public abstract class Producto : IPago
     {
         public int Id { get; set; }
 
